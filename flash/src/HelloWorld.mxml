@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   minWidth="640"
+			   minHeight="480"
+			   creationComplete="initApp()"
+			   >
+	<fx:Declarations>
+		<!-- 非ビジュアルエレメント (サービス、値オブジェクトなど) をここに配置 -->
+	</fx:Declarations>
+
+	<fx:Script>
+		<![CDATA[
+			private	var	myGreeter:Greeter = new Greeter();
+			public	function	initApp() : void
+			{
+				mainText.text = myGreeter.sayHello();
+			}
+		]]>
+	</fx:Script>
+	
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	
+<!--	<s:TextArea id="mainText" width="400" backgroundColor="#DDDDDD" editable="false"/> -->
+	<s:TextArea id="mainText" width="400" editable="false"/>
+
+	<s:HGroup width="400">
+		
+		<mx:Label text="ユーザー名:"/>
+		<s:TextInput id="userNameText" width="100%" enter="mainText.text = myGreeter.sayHello(userNameText.text);" /> 
+	</s:HGroup>
+	
+</s:Application>
