@@ -13,9 +13,14 @@ function init() {
 gadgets.util.registerOnLoadHandler(init);
 
 
-//	mixi API�̃e�X�g�p
+//	mixi APIのテスト用
 function	getProfile()
 {
+	var	element = document.getElementById("status");
+	var	text = element.innerHTML;
+//	element.innerHTML = document["UserInfos"];
+	element.innerHTML = "コールバック完了！";
+
 	document["UserInfos"].getProfileCallback();
 }
 

@@ -10,12 +10,14 @@
 <!-- <div>Hello, <input type="text" id="target" /> !</div> -->
 
 <script type="text/javascript" src="http://sub0000498489.hmk-temp.com/test/hello_mixi/hello.js"></script>
+<script type="text/javascript" src="http://sub0000498489.hmk-temp.com/test/hello_mixi/flash.js"></script>
+
 
 <div id="disp"><font size="4">文字列置き換えテスト中</font></div>
+<div id="status"></div>
 <div id="swf-here">ここにFlashが表示されます</div>
 <div id="swf-userinfos">ここにFlashが表示されます</div>
 
-<script type="text/javascript" src="http://sub0000498489.hmk-temp.com/test/hello_mixi/flash.js"></script>
 
 
   ]]></Content>

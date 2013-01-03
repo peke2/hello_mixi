@@ -9,7 +9,7 @@ package
 		public function BaseUI()
 		{
 			super();
-			
+
 			var	label:TextField = new TextField();
 
 			label.text = "完了";
@@ -21,6 +21,7 @@ package
 		private	function	init() : void
 		{
 			var	api:MixiAPI = new MixiAPI();
+			api.setUIComponent(this);
 			api.getProfile();
 		}
 	
