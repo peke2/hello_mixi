@@ -11,3 +11,11 @@ function init() {
   });
 }
 gadgets.util.registerOnLoadHandler(init);
+
+
+//	mixi APIのテスト用
+function	getProfile()
+{
+	document["UserInfos"].getProfileCallback();
+}
+

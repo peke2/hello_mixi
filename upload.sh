@@ -6,7 +6,8 @@
 #rsync -av --delete --chmod=Du+rwx,g+rwx,o+rx --chmod=Fu+rw,g+rw,o+r --exclude-from=exclude_optool_honda_copy.txt --dry-run -e "ssh -p 22" honda/ optool@bmanage.success-corp.net:/home/optool/honda/op-metal
 
 
-cp flash/bin-debug/HelloWorld.swf hello_mixi/swf
+cp flash/HelloWorld/bin-debug/HelloWorld.swf hello_mixi/swf
+cp flash/UserInfos/bin-debug/UserInfos.swf hello_mixi/swf
 
 home=~
 rsync -av --delete --chmod=Dg+rwx,Do+rx,Fa+rw,Fa-x --exclude-from=exclude_upload.txt -e "ssh -i $home/.ssh/peke2_common_key" hello_mixi peke2@211.125.90.40:/var/www/test
