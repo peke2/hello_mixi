@@ -24,6 +24,7 @@ package
 			api.setUIComponent(this);
 			api.getProfile();
 			api.getPeople();
+			api.addInviteButton();
 		}
 	
 	

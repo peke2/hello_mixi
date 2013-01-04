@@ -1,10 +1,15 @@
 package
 {
+	import flash.events.MouseEvent;
 	import flash.external.ExternalInterface;
 	import flash.system.Security;
 	import flash.text.*;
 	
+	import flashx.textLayout.tlf_internal;
+	
 	import mx.core.UIComponent;
+	
+	import spark.components.Button;
 
 	public class MixiAPI
 	{
@@ -98,6 +103,34 @@ package
 			ui.addChild(label);
 		}
 	
-	
+
+		public	function	addInviteButton() : void
+		{
+			var	button:Button = new Button();
+			button.label = "招待";
+			button.width = 80;
+			button.height = 20;
+			button.x = 200;
+			button.y = 0;
+		//	button.addEventListener(ComponentEvent.BUTTON_DOWN, inviteHandler);
+			button.addEventListener(MouseEvent.CLICK, inviteHandler);
+			this.ui.addChild(button);
+		}
+		
+		
+		public	function	inviteHandler(event:MouseEvent) : void
+		{
+			trace("招待ボタンが押されました");
+
+			ExternalInterface.addCallback("inviteCallback", inviteCallback);
+			ExternalInterface.call("invite");
+		}
+
+		
+		private	function	inviteCallback() : void
+		{
+		}
+
+		
 	}
 }

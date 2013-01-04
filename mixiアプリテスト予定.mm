@@ -16,7 +16,12 @@
 <node CREATED="1356920441447" ID="ID_1945781312" MODIFIED="1357275852489" TEXT="&#x30d5;&#x30ec;&#x30f3;&#x30c9;&#x306e;&#x53d6;&#x5f97;">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1357003693029" ID="ID_1787081927" MODIFIED="1357003709297" TEXT="&#x62db;&#x5f85;&#x306e;&#x8d77;&#x52d5;"/>
+<node CREATED="1357003693029" ID="ID_1787081927" MODIFIED="1357279608690" TEXT="&#x62db;&#x5f85;&#x306e;&#x8d77;&#x52d5;">
+<icon BUILTIN="messagebox_warning"/>
+<node CREATED="1357279618436" ID="ID_494812892" MODIFIED="1357279668118" TEXT="&#x3068;&#x308a;&#x3042;&#x3048;&#x305a;APPI&#x306e;&#x547c;&#x3073;&#x51fa;&#x3057;&#x306e;&#x307f;&#x3092;&#x78ba;&#x8a8d;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
 </node>
 </node>
 </node>

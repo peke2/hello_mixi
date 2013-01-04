@@ -80,3 +80,21 @@ function	getPeople()
 	});
 }
 
+
+//	招待のテスト用
+function	invite()
+{
+	opensocial.requestShareApp("VIEWER_FRIENDS", null, 
+		function(response)
+		{
+			if( response.hadError() )
+			{
+				var errCode = response.getErrorCode();
+			}
+			else
+			{
+			}
+		}
+	);
+}
+
