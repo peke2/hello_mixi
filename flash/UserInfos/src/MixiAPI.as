@@ -2,7 +2,7 @@ package
 {
 	import flash.external.ExternalInterface;
 	import flash.system.Security;
-	import flash.text.TextField;
+	import flash.text.*;
 	
 	import mx.core.UIComponent;
 
@@ -29,6 +29,7 @@ package
 
 			var	label:TextField = new TextField();
 			label.text = "プロフィール取得開始";
+			label.autoSize = TextFieldAutoSize.LEFT;
 			label.y = 24;
 			ui.addChild(label);
 
@@ -40,6 +41,7 @@ package
 
 			var	label:TextField = new TextField();
 			label.text = "JavaScriptからのコールバック完了";
+			label.autoSize = TextFieldAutoSize.LEFT;
 			label.y = 48;
 			ui.addChild(label);
 		}
