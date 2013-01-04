@@ -23,6 +23,7 @@ package
 			var	api:MixiAPI = new MixiAPI();
 			api.setUIComponent(this);
 			api.getProfile();
+			api.getPeople();
 		}
 	
 	
